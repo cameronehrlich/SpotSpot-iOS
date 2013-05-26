@@ -1,5 +1,5 @@
 //
-//  SSViewController.h
+//  SSGestureViewController.h
 //  SpotSpot
 //
 //  Created by Cameron Ehrlich on 5/26/13.
@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSViewController : UIViewController
-
-- (IBAction)play:(id)sender;
-- (IBAction)pause:(id)sender;
+@interface SSGestureViewController : UIViewController
+- (IBAction)playPause:(id)sender;
 - (IBAction)next:(id)sender;
 - (IBAction)previous:(id)sender;
-- (IBAction)volume:(UISlider *)sender;
+- (IBAction)volumeUp:(id)sender;
+- (IBAction)volumeDown:(id)sender;
 
 @end

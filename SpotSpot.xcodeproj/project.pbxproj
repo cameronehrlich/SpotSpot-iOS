@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		328CDA081752202800E52050 /* SSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CDA071752202800E52050 /* SSModel.m */; };
+		328CDA0B175226AE00E52050 /* SSGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CDA0A175226AE00E52050 /* SSGestureViewController.m */; };
+		328CDA1317522B4B00E52050 /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 328CDA1017522B4B00E52050 /* icon.psd */; };
+		328CDA1517522B6000E52050 /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 328CDA1417522B6000E52050 /* icon-retina.png */; };
+		328CDA1717522B6700E52050 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 328CDA1617522B6600E52050 /* icon.png */; };
 		32E0A8D617520A0D00741AA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E0A8D517520A0D00741AA6 /* UIKit.framework */; };
 		32E0A8D817520A0D00741AA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E0A8D717520A0D00741AA6 /* Foundation.framework */; };
 		32E0A8DA17520A0D00741AA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E0A8D917520A0D00741AA6 /* CoreGraphics.framework */; };
@@ -37,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		328CDA061752202800E52050 /* SSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSModel.h; sourceTree = "<group>"; };
+		328CDA071752202800E52050 /* SSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSModel.m; sourceTree = "<group>"; };
+		328CDA09175226AE00E52050 /* SSGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSGestureViewController.h; sourceTree = "<group>"; };
+		328CDA0A175226AE00E52050 /* SSGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSGestureViewController.m; sourceTree = "<group>"; };
+		328CDA1017522B4B00E52050 /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.psd; sourceTree = "<group>"; };
+		328CDA1417522B6000E52050 /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina.png"; path = "../../icon-retina.png"; sourceTree = "<group>"; };
+		328CDA1617522B6600E52050 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
 		32E0A8D217520A0D00741AA6 /* SpotSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E0A8D517520A0D00741AA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		32E0A8D717520A0D00741AA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +98,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		328CDA0C17522B3900E52050 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				328CDA09175226AE00E52050 /* SSGestureViewController.h */,
+				328CDA0A175226AE00E52050 /* SSGestureViewController.m */,
+				32E0A8F317520A0E00741AA6 /* SSViewController.h */,
+				32E0A8F417520A0E00741AA6 /* SSViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		328CDA0D17522B4B00E52050 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				328CDA1617522B6600E52050 /* icon.png */,
+				328CDA1417522B6000E52050 /* icon-retina.png */,
+				328CDA1017522B4B00E52050 /* icon.psd */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		32E0A8C917520A0D00741AA6 = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +156,10 @@
 				32E0A8E517520A0D00741AA6 /* SSAppDelegate.m */,
 				32E0A8ED17520A0E00741AA6 /* MainStoryboard_iPhone.storyboard */,
 				32E0A8F017520A0E00741AA6 /* MainStoryboard_iPad.storyboard */,
-				32E0A8F317520A0E00741AA6 /* SSViewController.h */,
-				32E0A8F417520A0E00741AA6 /* SSViewController.m */,
+				328CDA061752202800E52050 /* SSModel.h */,
+				328CDA071752202800E52050 /* SSModel.m */,
+				328CDA0D17522B4B00E52050 /* assets */,
+				328CDA0C17522B3900E52050 /* Controllers */,
 				32E0A8DC17520A0D00741AA6 /* Supporting Files */,
 			);
 			path = SpotSpot;
@@ -241,6 +276,9 @@
 				32E0A8EC17520A0E00741AA6 /* Default-568h@2x.png in Resources */,
 				32E0A8EF17520A0E00741AA6 /* MainStoryboard_iPhone.storyboard in Resources */,
 				32E0A8F217520A0E00741AA6 /* MainStoryboard_iPad.storyboard in Resources */,
+				328CDA1317522B4B00E52050 /* icon.psd in Resources */,
+				328CDA1517522B6000E52050 /* icon-retina.png in Resources */,
+				328CDA1717522B6700E52050 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +316,8 @@
 				32E0A8E217520A0D00741AA6 /* main.m in Sources */,
 				32E0A8E617520A0D00741AA6 /* SSAppDelegate.m in Sources */,
 				32E0A8F517520A0E00741AA6 /* SSViewController.m in Sources */,
+				328CDA081752202800E52050 /* SSModel.m in Sources */,
+				328CDA0B175226AE00E52050 /* SSGestureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +508,7 @@
 				32E0A90F17520A0E00741AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32E0A91017520A0E00741AA6 /* Build configuration list for PBXNativeTarget "SpotSpotTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +517,7 @@
 				32E0A91217520A0E00741AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

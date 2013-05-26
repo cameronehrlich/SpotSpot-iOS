@@ -7,23 +7,44 @@
 //
 
 #import "SSViewController.h"
+#import "SSModel.h"
 
-@interface SSViewController ()
-
-@end
-
-@implementation SSViewController
+@implementation SSViewController {
+    SSModel *sharedInstance;
+    
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+     sharedInstance = [SSModel sharedInstance];
 }
+
+- (IBAction)play:(id)sender {
+    [sharedInstance play];
+}
+
+- (IBAction)pause:(id)sender {
+    [sharedInstance pause];
+    
+}
+
+- (IBAction)next:(id)sender {
+    [sharedInstance next];
+    
+}
+
+- (IBAction)previous:(id)sender {
+    [sharedInstance previous];
+}
+
+- (IBAction)volume:(UISlider *)sender {
+    [sharedInstance volume:sender.value];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 @end
